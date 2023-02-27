@@ -5,8 +5,20 @@
 const nomi = ['luca','marco','mattia']
 const cognomi = ['pippo','paperino','topolino'];
 
-const nomeRandom = nomi[Math.floor(Math.random() * nomi.length)];
-const cognomeRandom = cognomi[Math.floor(Math.random() * nomi.length)];
+let  nomeRandom;
+let cognomeRandom;
+const lista = [];
 
-console.log(`${nomeRandom} ${cognomeRandom}`);
+
+for(let i = 0; i < 3; i++){
+    nomeRandom = nomi[Math.floor(Math.random() * nomi.length)];
+    cognomeRandom = cognomi[Math.floor(Math.random() * nomi.length)]; 
+    const fullName = `${nomeRandom} ${cognomeRandom}`; 
+    lista.push(fullName);
+}
+
+console.log(lista);
+
+
+
 
